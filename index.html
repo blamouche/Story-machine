@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>La fabrique à histoires</title>
+  </head>
+  <body>
+    <h1>Fabrique ton histoire</h1>
+    <form action="/" method="post">
+        <label for="animal">Animal :</label>
+        <select name="animal" id="animal" multiple>
+            <option value="chat">Chat</option>
+            <option value="chien">Chien</option>
+            <option value="oiseau">Oiseau</option>
+            <option value="poisson">Poisson</option>
+            <option value="cheval">Cheval</option>
+            <option value="éléphant">Éléphant</option>
+            <option value="tigre">Tigre</option>
+            <option value="lion">Lion</option>
+            <option value="ours">Ours</option>
+            <option value="souris">Souris</option>
+            <option value="lapin">Lapin</option>
+            <option value="serpent">Serpent</option>
+        </select>
+        <label for="transport">Transport :</label>
+        <select name="transport" id="transport" multiple>
+            <option value="voiture">Voiture</option>
+            <option value="avion">Avion</option>
+            <option value="train">Train</option>
+            <option value="bus">Bus</option>
+            <option value="vélo">Vélo</option>
+            <option value="moto">Moto</option>
+            <option value="bateau">Bateau</option>
+            <option value="hélicoptère">Hélicoptère</option>
+            <option value="navette spatiale">Navette spatiale</option>
+            <option value="chariot à chevaux">Chariot à chevaux</option>
+            <option value="trottinette">Trottinette</option>
+            <option value="roller">Roller</option>
+          </select>
+        <label for="lieu">Lieu :</label>
+        <select name="lieu" id="lieu" multiple>
+            <option value="paris">Paris</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="new york">New York</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="londres">Londres</option>
+            <option value="dubai">Dubai</option>
+            <option value="rio de janeiro">Rio de Janeiro</option>
+            <option value="sydney">Sydney</option>
+            <option value="singapour">Singapour</option>
+            <option value="moscou">Moscou</option>
+            <option value="séoul">Séoul</option>
+            <option value="mexico">Mexico</option>
+          </select>
+        <label for="duree">Durée :</label>
+        <select name="duree" id="duree" multiple>
+            <option value="courte">Court</option>
+            <option value="longue">Moyen</option>
+            <option value="tres longue">Long</option>
+        </select>
+        <label for="ton">Ton :</label>
+        <select name="ton" id="ton" multiple>
+            <option value="triste">Triste</option>
+            <option value="drôle">Drôle</option>
+            <option value="scientifique">Scientifique</option>
+            <option value="culturelle">Culturel</option>
+            <option value="touristique">Touristique</option>
+        </select>
+      <button type="submit">Generate story</button>
+    </form>
+    <hr>
+    <h2>Résultat :</h2>
+    <div id="story">
+      {text}
+    </div>
+  </body>
+</html>
